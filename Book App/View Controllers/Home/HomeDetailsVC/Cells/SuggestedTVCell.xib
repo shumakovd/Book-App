@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="274" id="KGk-i7-Jjw" customClass="SuggestedTVCell" customModule="Book_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="274"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="274"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Udu-7Z-brJ">
+                        <rect key="frame" x="0.0" y="0.0" width="453" height="274"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will also like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdt-8b-fmj">
+                                <rect key="frame" x="16" y="8" width="421" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="bjg-kq-Z1a"/>
+                                    <constraint firstAttribute="height" constant="28" id="luT-eE-fcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
+                                <color key="textColor" name="Black Label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XdP-GK-HyV">
+                                <rect key="frame" x="0.0" y="52" width="453" height="198"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="198" id="EE8-je-Edf"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uEA-N0-fY5">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XdP-GK-HyV" firstAttribute="leading" secondItem="Udu-7Z-brJ" secondAttribute="leading" id="BOx-9c-IGw"/>
+                            <constraint firstAttribute="bottom" secondItem="XdP-GK-HyV" secondAttribute="bottom" constant="24" id="Obh-sN-aqA"/>
+                            <constraint firstAttribute="trailing" secondItem="XdP-GK-HyV" secondAttribute="trailing" id="QYW-j2-wL3"/>
+                            <constraint firstItem="XdP-GK-HyV" firstAttribute="top" secondItem="hdt-8b-fmj" secondAttribute="bottom" constant="16" id="SYo-XQ-tN4"/>
+                            <constraint firstItem="hdt-8b-fmj" firstAttribute="top" secondItem="Udu-7Z-brJ" secondAttribute="top" constant="8" id="hbw-La-Q9V"/>
+                            <constraint firstItem="hdt-8b-fmj" firstAttribute="left" secondItem="Udu-7Z-brJ" secondAttribute="left" constant="16" id="lvm-9i-FNg"/>
+                            <constraint firstAttribute="right" secondItem="hdt-8b-fmj" secondAttribute="right" constant="16" id="yRi-Wm-IVS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Udu-7Z-brJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="T6f-IX-a9f"/>
+                    <constraint firstItem="Udu-7Z-brJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UKw-fi-j2J"/>
+                    <constraint firstAttribute="trailing" secondItem="Udu-7Z-brJ" secondAttribute="trailing" id="iAM-AU-cXF"/>
+                    <constraint firstAttribute="bottom" secondItem="Udu-7Z-brJ" secondAttribute="bottom" id="roU-So-bcC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="XdP-GK-HyV" id="8M5-aE-eeF"/>
+            </connections>
+            <point key="canvasLocation" x="60.305343511450381" y="77.464788732394368"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Black Label">
+            <color red="0.043000001460313797" green="0.030999999493360519" blue="0.059000000357627869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SuggestedCVCell" customModule="Book_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="362"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="362"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrY-2U-xyr">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="362"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6M-pe-raO">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7wk-DW-Vx8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJ5-1L-Xe0">
+                                <rect key="frame" x="0.0" y="154" width="343" height="208"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" name="Black Label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Z6M-pe-raO" secondAttribute="trailing" id="G1R-7D-Zwp"/>
+                            <constraint firstItem="MJ5-1L-Xe0" firstAttribute="top" secondItem="Z6M-pe-raO" secondAttribute="bottom" constant="4" id="HLI-WT-E9D"/>
+                            <constraint firstItem="Z6M-pe-raO" firstAttribute="top" secondItem="xrY-2U-xyr" secondAttribute="top" id="MQL-Va-zGc"/>
+                            <constraint firstItem="MJ5-1L-Xe0" firstAttribute="leading" secondItem="Z6M-pe-raO" secondAttribute="leading" id="Qdr-Sb-fe4"/>
+                            <constraint firstItem="Z6M-pe-raO" firstAttribute="leading" secondItem="xrY-2U-xyr" secondAttribute="leading" id="XDp-Cv-3zK"/>
+                            <constraint firstItem="MJ5-1L-Xe0" firstAttribute="trailing" secondItem="Z6M-pe-raO" secondAttribute="trailing" id="cef-Vg-Tcz"/>
+                            <constraint firstAttribute="bottom" secondItem="MJ5-1L-Xe0" secondAttribute="bottom" id="wZZ-at-Vty"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="top" secondItem="xrY-2U-xyr" secondAttribute="top" id="3tW-oP-5kv"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="right" secondItem="xrY-2U-xyr" secondAttribute="right" id="B3k-T0-ybs"/>
+                <constraint firstAttribute="bottom" secondItem="xrY-2U-xyr" secondAttribute="bottom" id="bKU-cb-KOe"/>
+                <constraint firstItem="xrY-2U-xyr" firstAttribute="left" secondItem="ZTg-uK-7eu" secondAttribute="left" id="hCh-Us-4Dv"/>
+            </constraints>
+            <size key="customSize" width="343" height="362"/>
+            <connections>
+                <outlet property="bookImageView" destination="Z6M-pe-raO" id="WXd-eK-YA2"/>
+                <outlet property="mainView" destination="xrY-2U-xyr" id="R5G-ca-ThL"/>
+                <outlet property="titleLabel" destination="MJ5-1L-Xe0" id="043-F4-bXH"/>
+            </connections>
+            <point key="canvasLocation" x="182.44274809160305" y="108.45070422535211"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Black Label">
+            <color red="0.043000001460313797" green="0.030999999493360519" blue="0.059000000357627869" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

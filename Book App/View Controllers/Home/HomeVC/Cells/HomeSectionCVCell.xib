@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeSectionCVCell" customModule="Book_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="289"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="289"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ake-nK-lmg">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="289"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ye-49-gZK">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3Hr-7m-5tS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDq-kg-gPc">
+                                <rect key="frame" x="0.0" y="154" width="120" height="135"/>
+                                <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                <color key="textColor" name="White Alpha Description Label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0ye-49-gZK" firstAttribute="leading" secondItem="ake-nK-lmg" secondAttribute="leading" id="80H-83-Loo"/>
+                            <constraint firstAttribute="trailing" secondItem="0ye-49-gZK" secondAttribute="trailing" id="dH7-ZR-wL7"/>
+                            <constraint firstItem="aDq-kg-gPc" firstAttribute="trailing" secondItem="0ye-49-gZK" secondAttribute="trailing" id="ejK-19-Thq"/>
+                            <constraint firstItem="aDq-kg-gPc" firstAttribute="top" secondItem="0ye-49-gZK" secondAttribute="bottom" constant="4" id="ith-wb-iAW"/>
+                            <constraint firstItem="0ye-49-gZK" firstAttribute="top" secondItem="ake-nK-lmg" secondAttribute="top" id="lFx-zM-utt"/>
+                            <constraint firstAttribute="bottom" secondItem="aDq-kg-gPc" secondAttribute="bottom" id="mEQ-h5-1I9"/>
+                            <constraint firstItem="aDq-kg-gPc" firstAttribute="leading" secondItem="0ye-49-gZK" secondAttribute="leading" id="smV-ju-Aqo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="leading" secondItem="ake-nK-lmg" secondAttribute="leading" id="45E-nA-0Ur"/>
+                <constraint firstAttribute="trailing" secondItem="ake-nK-lmg" secondAttribute="trailing" id="FeG-yE-ACF"/>
+                <constraint firstAttribute="top" secondItem="ake-nK-lmg" secondAttribute="top" id="OBt-YD-l8w"/>
+                <constraint firstAttribute="bottom" secondItem="ake-nK-lmg" secondAttribute="bottom" id="orv-l6-9Ta"/>
+            </constraints>
+            <size key="customSize" width="207" height="289"/>
+            <connections>
+                <outlet property="bookImageView" destination="0ye-49-gZK" id="Ovx-EF-Bi7"/>
+                <outlet property="mainView" destination="ake-nK-lmg" id="cjd-Ca-PvJ"/>
+                <outlet property="titleLabel" destination="aDq-kg-gPc" id="R6v-zZ-DbQ"/>
+            </connections>
+            <point key="canvasLocation" x="245.80152671755724" y="-88.380281690140848"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="White Alpha Description Label">
+            <color red="1" green="1" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

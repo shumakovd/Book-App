@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CarouselCVCell" customModule="Book_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="356"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="356"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ak-hk-5H8">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="356"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="if0-y6-R58">
+                                <rect key="frame" x="0.0" y="4" width="200" height="285.33333333333331"/>
+                                <color key="backgroundColor" name="Grey Background Image View"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusView">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN1-1b-vYP">
+                                <rect key="frame" x="0.0" y="305.33333333333331" width="200" height="27.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="20"/>
+                                <color key="textColor" name="White Label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpt-b9-wcJ">
+                                <rect key="frame" x="0.0" y="336.66666666666669" width="200" height="19.333333333333314"/>
+                                <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="14"/>
+                                <color key="textColor" name="White Alpha Description Label"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="if0-y6-R58" firstAttribute="leading" secondItem="6ak-hk-5H8" secondAttribute="leading" id="Ahr-8K-8UK"/>
+                            <constraint firstItem="QN1-1b-vYP" firstAttribute="leading" secondItem="if0-y6-R58" secondAttribute="leading" id="CPg-uD-q83"/>
+                            <constraint firstItem="QN1-1b-vYP" firstAttribute="top" secondItem="if0-y6-R58" secondAttribute="bottom" constant="16" id="EyK-nG-9X1"/>
+                            <constraint firstAttribute="bottom" secondItem="mpt-b9-wcJ" secondAttribute="bottom" id="WF5-46-Tdd"/>
+                            <constraint firstAttribute="trailing" secondItem="if0-y6-R58" secondAttribute="trailing" id="Wji-gm-r7n"/>
+                            <constraint firstItem="if0-y6-R58" firstAttribute="top" secondItem="6ak-hk-5H8" secondAttribute="top" constant="4" id="aq8-mZ-MfK"/>
+                            <constraint firstItem="QN1-1b-vYP" firstAttribute="trailing" secondItem="if0-y6-R58" secondAttribute="trailing" id="mVB-FN-M6A"/>
+                            <constraint firstItem="mpt-b9-wcJ" firstAttribute="leading" secondItem="if0-y6-R58" secondAttribute="leading" id="olV-W6-m54"/>
+                            <constraint firstItem="mpt-b9-wcJ" firstAttribute="trailing" secondItem="if0-y6-R58" secondAttribute="trailing" id="s0W-wO-lQd"/>
+                            <constraint firstItem="mpt-b9-wcJ" firstAttribute="top" secondItem="QN1-1b-vYP" secondAttribute="bottom" constant="4" id="zmd-Vf-KVa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="6ak-hk-5H8" firstAttribute="left" secondItem="gTV-IL-0wX" secondAttribute="left" id="Aq6-WJ-B2f"/>
+                <constraint firstAttribute="right" secondItem="6ak-hk-5H8" secondAttribute="right" id="Mcc-bW-lMk"/>
+                <constraint firstAttribute="bottom" secondItem="6ak-hk-5H8" secondAttribute="bottom" id="T4o-WR-3pf"/>
+                <constraint firstItem="6ak-hk-5H8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vRS-sd-9Yg"/>
+            </constraints>
+            <size key="customSize" width="202" height="356"/>
+            <connections>
+                <outlet property="authorLabel" destination="mpt-b9-wcJ" id="xsu-J2-VfK"/>
+                <outlet property="bookImageView" destination="if0-y6-R58" id="Y1g-xu-Snr"/>
+                <outlet property="mainView" destination="6ak-hk-5H8" id="0YP-Sm-8oS"/>
+                <outlet property="nameLabel" destination="QN1-1b-vYP" id="o7Q-z3-awV"/>
+            </connections>
+            <point key="canvasLocation" x="119.08396946564885" y="107.74647887323944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Grey Background Image View">
+            <color red="0.76899999380111694" green="0.76899999380111694" blue="0.76899999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White Alpha Description Label">
+            <color red="1" green="1" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White Label">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
