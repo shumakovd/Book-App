@@ -194,7 +194,11 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let books = books?.books else { return }
         var book: BookML?
-        let selectedBanner = banners?[indexPath.row]
+        var selectedBanner: BannerML?
+        
+        if let bannersCount = banners?.count, bannersCount > 0 {
+            selectedBanner = banners?[indexPath.row % bannersCount]
+        }
         
         for each in books {
             if each.id == selectedBanner?.book_id {
